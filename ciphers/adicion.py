@@ -1,4 +1,4 @@
-def encrypt(text: str, key: str) -> list[int]:
+def cifrar(text: str, key: str) -> list[int]:
     """
     Cifra un texto plano usando una clave mediante adición letra a letra (A=0, B=1, ...).
     Retorna una lista de enteros con el resultado de las sumas.
@@ -22,7 +22,7 @@ def encrypt(text: str, key: str) -> list[int]:
     return cipher_numbers
 
 
-def decrypt(cipher_numbers: list[int], key: str) -> str:
+def descifrar(cipher_numbers: list[int], key: str) -> str:
     """
     Descifra una lista de números restando los valores de la clave.
     Retorna el texto plano en mayúsculas.

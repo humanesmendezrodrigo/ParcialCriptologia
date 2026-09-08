@@ -1,4 +1,4 @@
-def encrypt(text: str, rails: int) -> str:
+def cifrar(text: str, rails: int) -> str:
     if rails <= 1:
         return text
 
@@ -16,7 +16,7 @@ def encrypt(text: str, rails: int) -> str:
     return "".join("".join(row) for row in fence)
 
 
-def decrypt(cipher_text: str, rails: int) -> str:
+def descifrar(cipher_text: str, rails: int) -> str:
     if rails <= 1:
         return cipher_text
 
